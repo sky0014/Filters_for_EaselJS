@@ -102,6 +102,14 @@ _stage.addChild(_text);</code></pre>
 		* @default false
 		**/
 		this.hideObject = !!hideObject;
+
+		/**
+		 * A flag stating that this filter uses a context draw mode and cannot be batched into imageData processing.
+		 * @property usesContext
+		 * @type {boolean}
+		 * @default false
+		 */
+		this.usesContext = true;		
 	}
 
 	var p = createjs.extend(DropShadowFilter, createjs.Filter);

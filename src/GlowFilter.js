@@ -86,6 +86,14 @@ _stage.addChild(_shape);</code></pre>
 		* @default false
 		**/
 		this.knockout = !!knockout;
+
+		/**
+		 * A flag stating that this filter uses a context draw mode and cannot be batched into imageData processing.
+		 * @property usesContext
+		 * @type {boolean}
+		 * @default false
+		 */
+		this.usesContext = true;		
 	}
 
 	var p = createjs.extend(GlowFilter, createjs.Filter);
